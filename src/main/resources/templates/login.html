@@ -1,8 +1,10 @@
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 
 <head>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"/>
-<title th:text="#{label.pages.home.title}">Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="dist/css/AdminLTE.min.css"/>
+
+    <title th:text="#{label.pages.home.title}">Title</title>
 <script th:inline="javascript">
 	function validate() {
         if (document.f.username.value == "" && document.f.password.value == "") {
@@ -68,6 +70,9 @@ label{padding-left:0 !important}
             <a class="btn btn-default" th:href="@{/forgetPassword.html}" th:text="#{message.resetPassword}">reset</a>
         </div>
     </div>
+<script src="plugins/jQuery/jQuery-2.2.0.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>
